@@ -61,7 +61,7 @@ class BurgerBuilder extends Component {
 
 		let orderSummary = null;
 		let burger = this.props.error ? (
-			<p>Falide to load ingredients!!</p>
+			<p>Failed to load ingredients!!</p>
 		) : (
 			<Spinner />
 		);

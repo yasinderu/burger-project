@@ -34,6 +34,7 @@ export const initIngredients = () => {
 			.get('https://reactburger-e4f44.firebaseio.com/ingredients.json')
 			.then(response => {
 				dispatch(setIngredient(response.data));
+				// console.log(response.data);
 			})
 			.catch(error => {
 				dispatch(fetchIngredientsFailed());
